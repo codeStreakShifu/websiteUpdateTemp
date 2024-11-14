@@ -17,6 +17,7 @@ body{
 html{
     font-size: 70%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -108,6 +109,7 @@ header{
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(209, 213, 214, 0.7);
     word-spacing: 0.2em;
+    animation: slideFromToph2 1s ease-in-out;
     font-weight: 700;
   }
 
@@ -117,6 +119,25 @@ header{
     margin-right: 10rem;
     text-align: justify;
   }
+
+  .author-but {
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: brown; /* Green background */
+    color: #eef6ff; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Keeps it inline like a button */
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2em;
+    font-weight: 250; /* Optional: makes the text bold */
+}
+
+.author-but:hover {
+    background-color: #ff1100; /* Darker green on hover */
+}
 
   .hero {
     background-image: url('bg-img.jpg'); /* Use the path to your image */
@@ -142,11 +163,12 @@ header{
     color: #2e4156;
     text-shadow: 2px 2px 4px rgba(68, 70, 67, 0.7);
     margin-bottom: 1rem;
-    animation: topIn 1.5s ease-in-out;
     transform: translateX(50%);
+    animation: slideFromTop 1s ease-in-out;
+    
 }
 
-.hero-text {
+.hero-text p{
     font-size: 1.7em;
     color: #08192e;
     max-width: 600px;
@@ -155,9 +177,12 @@ header{
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     padding: 0 20px;
     transform: translateX(44.5%);
+    animation: slideFromRight 1.7s ease-in-out;
     text-align: left;
     
 }
+
+/* Keyframes for animations */
 
 @keyframes slideInLogo {
     from {
@@ -167,4 +192,29 @@ header{
         transform: translateX(0);
     }
 }
+
+
+@keyframes slideFromTop {
+    0% {
+        transform: translate(50%, -50px); /* Start above */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(50%,0); /* End at the original position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight { /*hero-text p*/
+    0% {
+        transform: translateX(60%); /* Start to the right */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(44.5%); /* End at the original position */
+        opacity: 1;
+    }
+}
+
+
 
