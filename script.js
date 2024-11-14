@@ -10,3 +10,7 @@ links.forEach(link => {
         this.classList.add('active');
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+  });
