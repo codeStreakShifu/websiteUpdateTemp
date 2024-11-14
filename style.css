@@ -78,7 +78,7 @@ header{
 
 .about-author{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: #dbf2f8;
     display: flex;
     text-align: left;
@@ -91,38 +91,40 @@ header{
   }
 
   .profile-image img{
-    width: 30vw;
-    height: 60vh;
+    width: 33vw;
+    height: 66vh;
     margin-top: 25vh;
     border-radius: 50%;
-    transform: translateX(40%);
+    transform: translateX(30%);
 
   }
 
   .author-text{
+    margin-top: 8vh;
     width: 50%;
     transform: translateX(-10%);
   }
 
   .about-author h2{
-    margin-top: 40vh;
-    font-size: 4rem;
+    margin-top: 25vh;
+    font-size: 9vh;
     text-shadow: 2px 2px 4px rgba(209, 213, 214, 0.7);
     word-spacing: 0.2em;
     animation: slideFromToph2 1s ease-in-out;
     font-weight: 700;
+    font-family: 'Playfair Display', serif;
   }
 
   .about-author p{
     margin-top: 3vh;
-    font-size: 1.8rem;
-    margin-right: 10rem;
-    text-align: justify;
+    font-size: 3vh;
+    margin-right: 8rem;
+    text-align: left;
   }
 
   .author-but {
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: 4vh;
     background-color: brown; /* Green background */
     color: #eef6ff; /* White text */
     padding: 10px 20px; /* Padding for button size */
@@ -168,7 +170,7 @@ header{
     
 }
 
-.hero-text p{
+.hero-text{
     font-size: 1.7em;
     color: #08192e;
     max-width: 600px;
@@ -180,6 +182,54 @@ header{
     animation: slideFromRight 1.7s ease-in-out;
     text-align: left;
     
+}
+
+.about-book{
+    width: 100%;
+    height: 100vh;
+    background-color: #83bdff;
+    display: flex;
+    
+}
+
+.book-text{
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+    margin-top: 12vh;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+ 
+
+}
+
+.book-text h2{
+    margin-top: 10vh;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+.book-text p{
+    margin-top: 3.5vh;
+    font-size: 1em;
+    text-align: justify;
+    width: 40vw;
+    margin-left: 12%;
+}
+
+
+
+.book-mockup{
+    margin-top: 12vh;
+    width: 100%;
+}
+
+.book-mockup img{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    width: 77%;
+    height: auto;
+    box-shadow: 5px 40px 80px rgba(29, 28, 28, 0.1);
 }
 
 /* Keyframes for animations */
