@@ -267,7 +267,7 @@ header{
 }
 
 footer {
-    background-color: #c23903;
+    background-color: #e05721;
     color: white;
     padding: 20px;
     text-align: center;
@@ -306,7 +306,7 @@ footer .social-icons .fa-facebook:hover {
 }
 
 footer .social-icons .fa-youtube:hover {
-    color: #ff0000; /* YouTube color */
+    color: #3b20b4; /* YouTube color */
 }
 
 
