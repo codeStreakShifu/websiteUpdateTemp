@@ -187,7 +187,11 @@ header{
 .about-book{
     width: 100%;
     height: 100vh;
-    background-color: #83bdff;
+    background-image: url('bg-aboutbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #acd0fa;
     display: flex;
     
 }
@@ -199,7 +203,8 @@ header{
     margin-top: 12vh;
     padding: 15px;
     font-family: 'Playfair Display', serif;
- 
+    text-shadow: 2px 2px 5px rgba(89, 23, 212, 0.2);
+    color: whitesmoke;
 
 }
 
