@@ -9,9 +9,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+.hamburger{
+    display: none;
+}
+
 body{
     background-color: whitesmoke;
     color: #10253a;
+    min-width: 100vw;
 }
 
 html{
@@ -25,7 +30,7 @@ header{
     top: 0;
 	left: 0;
 	width: 100%;
-	padding: 3rem 10% 3rem 10%;
+	padding: 3vw 10% 3vw 10%;
 	background: rgba(202, 208, 212, 0.4);
 	backdrop-filter: blur(3px);
 	display: flex;
@@ -67,7 +72,6 @@ header{
     font-weight: 800; /* Bold weight */
     color: #2e4156;
     text-shadow: 4px 4px 4px #aaa;
-    animation: slideInLogo 1.5s ease-in-out;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -116,9 +120,9 @@ header{
   }
 
   .about-author p{
-    margin-top: 3vh;
-    font-size: 3vh;
-    margin-right: 8rem;
+    margin-top: 3vw;
+    font-size: 3vw;
+    margin-right: 10vw;
     text-align: left;
   }
 
@@ -149,38 +153,39 @@ header{
     position: relative;
     text-align: center;
     color: white;
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     
 }
 
 .hero h1 {
-    font-size: 4em;
+    font-size: 3.5vw;
     font-weight: bold;
     color: #2e4156;
     text-shadow: 2px 2px 4px rgba(68, 70, 67, 0.7);
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
     transform: translateX(50%);
-    animation: slideFromTop 1s ease-in-out;
+    max-width: 50vw;
+    margin-right: 3vw;
     
 }
 
 .hero-text{
-    font-size: 1.7em;
+    font-size: 1.7vw;
     color: #08192e;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 50vw;
     line-height: 1.4em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     padding: 0 20px;
     transform: translateX(44.5%);
-    animation: slideFromRight 1.7s ease-in-out;
     text-align: left;
+    margin-right: 2.5vw;
     
 }
 
@@ -239,37 +244,7 @@ header{
 
 /* Keyframes for animations */
 
-@keyframes slideInLogo {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 
-
-@keyframes slideFromTop {
-    0% {
-        transform: translate(50%, -50px); /* Start above */
-        opacity: 0;
-    }
-    100% {
-        transform: translate(50%,0); /* End at the original position */
-        opacity: 1;
-    }
-}
-
-@keyframes slideFromRight { /*hero-text p*/
-    0% {
-        transform: translateX(60%); /* Start to the right */
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(44.5%); /* End at the original position */
-        opacity: 1;
-    }
-}
 
 footer {
     background-color: #e05721;
