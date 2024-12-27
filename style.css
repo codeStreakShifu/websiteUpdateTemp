@@ -1,50 +1,389 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
     text-decoration: none;
-    border: none;
-    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+nav{
+    background: rgba(202, 208, 212, 0.4);
+	backdrop-filter: blur(3px);
+    height: 100px;
+    width: 100%;
+}
+
+label.logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #2e3636;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+label.logo:hover {
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(231, 133, 133, 0.5);
+    transform: scale(1.2); /* Scale to 1.2 on hover */
 }
 
 .hamburger{
     display: none;
 }
-
-body{
-    background-color: whitesmoke;
-    color: #10253a;
-    min-width: 100vw;
+nav ul{
+    float: right;
+    margin-right: 50px;
 }
 
-html{
-    font-size: 70%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+    font-size: 20px;
 }
+
+nav ul li a{
+    color: #2e3636;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+a.active,a:hover{
+    color: #c44141;
+    padding: 9px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+section{
+    height: 100vh;
+    min-width: 100%;
+    padding: 0 100px;
+}
+
+section.content.homepage {
+    background-image: url('bg-img.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center content vertically */
+    padding-right: 100px; /* Add padding to the right */
+}
+
+.hero {
+    display: inline-block; /* Ensure the hero section does not take full width */
+    text-align: center; /* Center text inside hero */
+    width: 50%; /* Take up half of the section */
+    margin-right: 0; /* Remove any right margin */
+    
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+    text-align: center; /* Center the h1 element */
+    font-size: 55px;
+    font-weight: bolder;
+    
+}
+
+.hero p{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+section.content.author {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    align-items: center;
+    padding: 500px 100px;
+    background-color: #f9f9f9;
+    background-image: url('bg-aboutauthor.jpg'); /* Add background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-author {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 800px;
+    margin-right: 50px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+.author-text {
+    flex: 2;
+    max-width: 700px;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+}
+
+.author-text h2 {
+    font-size: 48px; /* Increase font size */
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.author-text p {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.8;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+    margin-bottom: 20px;
+}
+
+.author-but {
+    display: inline-block;
+    background-color: brown; /* Green background */
+    color: #eef6ff; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 5px;
+    letter-spacing: 0.2em;
+    font-weight: 250;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.author-but:hover {
+    background-color: #6e110a;
+    padding: 10px 20px;
+    font-weight: 250;
+    color: whitesmoke;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.image-gallery .image-item {
+    flex: 1;
+    max-width: 15%; /* Adjust the width of each image */
+}
+
+.image-gallery .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+section.content.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    background-image: url('bg-aboutbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.book-text {
+    flex: 2;
+    max-width: 700px;
+}
+
+.book-text h2 {
+    font-size: 48px; /* Increase font size */
+    margin-bottom: 20px;
+    color: whitesmoke; /* Change text color to white smoke */
+}
+
+.book-text p {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.8;
+    color: whitesmoke; /* Change text color to white smoke */
+    margin-bottom: 20px;
+}
+
+.book-mockup {
+    flex: 1;
+    max-width: 900px; /* Adjust the size of the image */
+    margin-left: 50px;
+}
+
+.book-mockup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    label.logo{
+        font-size: 30px;
+    }
+    nav ul {
+        margin-right: 30px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 0 50px;
+    }
+
+    section.content.homepage {
+        padding-right: 50px;
+    }
+
+    .hero {
+        width: 60%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    section {
+        padding: 0 20px;
+    }
+
+    section.content.homepage {
+        padding-right: 20px;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    section.content.homepage {
+        padding-right: 10px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+
+
+
+/*
 
 header{
-	position: fixed;
+	position: relative;
     top: 0;
 	left: 0;
 	width: 100%;
-	padding: 3vw 10% 3vw 10%;
+	padding: 3vw 50px;
 	background: rgba(202, 208, 212, 0.4);
 	backdrop-filter: blur(3px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
     z-index: 5;
+    align-self: center;
 }
 
-
-
-
 .head_links a{
-    font-size: 1.7vw;
-    margin-left: 4rem;
+    font-size: clamp(0.7em, 1.5vw, 2.4em);
+    margin-left: clamp(0.8em, 1.7vw, 2.2em);
     justify-content: space-between;
     align-items: center;
     color: #2e3636;
@@ -57,7 +396,7 @@ header{
 }
 
 .head_links a.active {
-    color: #c44141; /* Color when active */
+    color: #c44141; 
     text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
 }
 
@@ -69,7 +408,7 @@ header{
 .logo{
     font-size: 2.7vw;
     font-family: 'Libre Baskerville', serif;
-    font-weight: 800; /* Bold weight */
+    font-weight: 800; 
     color: #2e4156;
     text-shadow: 4px 4px 4px #aaa;
 }
@@ -121,7 +460,7 @@ header{
 
   .about-author p{
     margin-top: 3vw;
-    font-size: 3vw;
+    font-size: 2vw;
     margin-right: 10vw;
     text-align: left;
   }
@@ -129,24 +468,24 @@ header{
   .author-but {
     text-decoration: none;
     margin-top: 4vh;
-    background-color: brown; /* Green background */
-    color: #eef6ff; /* White text */
-    padding: 10px 20px; /* Padding for button size */
-    border-radius: 5px; /* Rounded corners */
-    display: inline-block; /* Keeps it inline like a button */
+    background-color: brown; 
+    color: #eef6ff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    display: inline-block; 
     text-align: center;
     font-size: 1vw;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.2em;
-    font-weight: 250; /* Optional: makes the text bold */
+    font-weight: 250; 
 }
 
 .author-but:hover {
-    background-color: #ff1100; /* Darker green on hover */
+    background-color: #ff1100; 
 }
 
   .hero {
-    background-image: url('bg-img.jpg'); /* Use the path to your image */
+    background-image: url('bg-img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,11 +581,12 @@ header{
     box-shadow: 5px 40px 80px rgba(29, 28, 28, 0.1);
 }
 
-/* Keyframes for animations */
 
 
+*/
 
 footer {
+    width: 100%;
     background-color: #e05721;
     color: white;
     padding: 20px;
@@ -278,15 +618,15 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: #1da1f2; /* Blue for Twitter */
+    color: #1da1f2; 
 }
 
 footer .social-icons .fa-facebook:hover {
-    color: #3b5998; /* Facebook color */
+    color: #3b5998; 
 }
 
 footer .social-icons .fa-youtube:hover {
-    color: #3b20b4; /* YouTube color */
+    color: #3b20b4; 
 }
 
 

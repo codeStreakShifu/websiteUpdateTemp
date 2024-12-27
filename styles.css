@@ -16,6 +16,7 @@ header {
     background: #34495e;
     padding: 15px 30px;
     color: #ecf0f1;
+    
 }
 
 .header .logo {
@@ -51,7 +52,7 @@ header {
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('bg-img.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 20px;
