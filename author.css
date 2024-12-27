@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section{
+    font-family: 'Playfair Display', serif;
+}
+
+section.content.author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px; /* Adjust padding to ensure proper spacing */
+    background-color: #f9f9f9;
+}
+
+.about-author {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px; /* Add margin to separate from image gallery */
+}
+
+
+.author-text {
+    flex: 2;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+}
+
+.author-text h2 {
+    text-align: center;
+    font-size: 58px; /* Increase font size */
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+    text-shadow: 2px 2px 4px rgba(243, 243, 243, 0.5); /* Add text shadow */
+}
+
+.author-text p {
+    font-size: 40px; /* Increase font size */
+    line-height: 1.8;
+    color: rgb(0, 0, 0); /* Change text color to white smoke */
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.image-gallery .image-item {
+    flex: 1 1 calc(25% - 20px); /* Adjust the width of each image and add spacing */
+    margin: 10px; /* Add margin to each image item */
+    text-align: center; /* Center the text below the image */
+}
+
+.image-gallery .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+.image-gallery .image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .about-author {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .author-text {
+        text-align: center;
+    }
+
+    .image-gallery .image-item {
+        flex: 1 1 calc(50% - 10px); /* Adjust the width of each image for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .author-text h2 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .author-text p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .image-gallery .image-item {
+        flex: 1 1 100%; /* Adjust the width of each image for very small screens */
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #e05721;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1da1f2;
+}
+
+footer .social-icons .fa-facebook:hover {
+    color: #3b5998;
+}
+
+footer .social-icons .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+footer .social-icons .fa-linkedin:hover {
+    color: #0077b5;
+}
+
+footer .social-icons .fa-github:hover {
+    color: #333;
+}
