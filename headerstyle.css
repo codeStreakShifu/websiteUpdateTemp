@@ -144,10 +144,116 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     label.logo {
-        font-size: 30px;
+        font-size: 25px;
+        padding-left: 20px;
     }
 
     .checkbtn {
         margin-left: 20px;
     }
+
+    section {
+        max-height: 70vh;
+        min-width: 100vw;
+     
+    }
+
+    section.content.homepage {
+        padding: 30px;
+        
+    }
+
+    .hero {
+        width: 50%;
+    }
+
+    .hero h1 {
+        padding-top: 45px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        margin-bottom: 0;
+        font-size: 10px;
+        text-align: center;
+        color: black;
+        text-shadow: 2px 2px 10px white;
+        
+    }
+
+    section.content.author {
+        
+        padding: 20px; 
+        max-height: 70vh;
+        
+    }
+
+    section.content.author h1{
+        display: block;
+    }
+
+    .profile-image{
+        min-width: 30vw;
+        margin-left: 20px;
+    
+    }
+
+    .profile-image img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .about-author {
+        display: flex;
+        padding: 0;
+        flex-wrap: nowrap; /* Ensure the content does not wrap */
+        margin-bottom: 0; /* Add some space between sections */
+    }
+
+    
+    
+    .author-text h2 {
+        max-width: 50vw;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+ 
+         /* Adjust font size for smaller screens */
+    }
+
+
+
+    .author-text p {
+        min-width: 40vw;
+        font-size: 10px;
+        letter-spacing: 0;
+        text-align: justify; 
+        margin-top: 25px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .image-gallery{
+        margin-top: 0;
+    }
+
+    .image-gallery .image-item {
+        flex: 1; 
+        max-width: 20%;/* Adjust the width of each image for very small screens */
+
+    }
+    .image-gallery .image-item img{
+        width: 100%;
+        height: auto;
+    }
+    .author-but{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    section.content.books{
+        overflow-y: auto;
+    } 
 }

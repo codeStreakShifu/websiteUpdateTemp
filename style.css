@@ -33,7 +33,7 @@ section.content.homepage {
 .hero h1 {
     margin-bottom: 30px;
     text-align: center; /* Center the h1 element */
-    font-size: 55px;
+    font-size: 40px;
     font-weight: bolder;
     
 }
@@ -48,12 +48,13 @@ section.content.author {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 500px 100px;
+    padding: 450px 100px;
     background-color: #f9f9f9;
-    background-image: url('bg-aboutauthor.jpg'); /* Add background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
+}
+
+section.content.author h1{
+    display: none;
 }
 
 .about-author {
@@ -67,10 +68,13 @@ section.content.author {
     border-radius: 10px;
 }
 
+
+
 .profile-image {
     flex: 1;
-    max-width: 500px;
+    max-width: 300px;
     margin-left: 50px;
+    margin-top: -50px;
 }
 
 .profile-image img {
@@ -87,6 +91,7 @@ section.content.author {
 }
 
 .author-text h2 {
+    display: block;
     font-size: 48px; /* Increase font size */
     margin-bottom: 30px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
@@ -96,6 +101,7 @@ section.content.author {
 .author-text p {
     font-size: 20px; /* Increase font size */
     line-height: 1.8;
+    text-align: justify;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
     margin-bottom: 50px;
 }
@@ -110,7 +116,7 @@ section.content.author {
     font-weight: 250;
     text-decoration: none;
     font-size: large;
-    margin-top: 30px;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -252,81 +258,7 @@ section.content.books {
     }
 }
 
-@media (max-width: 480px) {
-    
 
-    section {
-        max-height: 70vh;
-    }
-
-    section.content.homepage {
-        padding-right: 10px;
-        
-    }
-
-    .hero {
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 1.5em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    section.content.author {
-        margin-top: 20px;
-        padding: 10px; 
-        max-height: 70vh;
-        
-    }
-
-    .profile-image{
-        width: 50px;
-        height: auto;
-        align-items:first baseline;
-    
-    }
-    .about-author {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Ensure the content does not wrap */
-        margin-bottom: 0; /* Add some space between sections */
-    }
-    .author-text h2 {
-        font-size: 17px;
-        text-align: center;
- 
-         /* Adjust font size for smaller screens */
-    }
-
-    .author-text p {
-        font-size: 8px;
-        text-align: justify; 
-        margin-bottom: 0;
-    }
-
-    .image-gallery{
-        margin-top: 10px;
-    }
-
-    .image-gallery .image-item {
-        flex: 1 1 100%; /* Adjust the width of each image for very small screens */
-        margin: 5px 0;
-    }
-
-    .author-but{
-        font-size: 10px;
-        padding: 5px 10px;
-    }
-
-    
-    
-
-}
 
 
 footer {
