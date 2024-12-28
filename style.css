@@ -73,8 +73,8 @@ section.content.author h1{
 .profile-image {
     flex: 1;
     max-width: 300px;
-    margin-left: 50px;
-    margin-top: -50px;
+    margin-right: 50px;
+    margin-top: 45px;
 }
 
 .profile-image img {
@@ -86,7 +86,7 @@ section.content.author h1{
 
 .author-text {
     flex: 2;
-    max-width: 700px;
+    max-width: 50vw;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
 }
 
