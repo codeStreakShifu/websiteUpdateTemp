@@ -62,7 +62,6 @@ section.content.author {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -70,8 +69,8 @@ section.content.author {
 
 .profile-image {
     flex: 1;
-    max-width: 800px;
-    margin-right: 50px;
+    max-width: 500px;
+    margin-left: 50px;
 }
 
 .profile-image img {
@@ -91,7 +90,7 @@ section.content.author {
     font-size: 48px; /* Increase font size */
     margin-bottom: 30px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
-    text-shadow: 2px 2px 4px rgba(247, 247, 247, 0.5); /* Add text shadow */
+    
 }
 
 .author-text p {
@@ -254,20 +253,15 @@ section.content.books {
 }
 
 @media (max-width: 480px) {
-    nav ul li {
-        font-size: 16px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
+    
 
     section {
-        padding: 0 10px;
+        max-height: 70vh;
     }
 
     section.content.homepage {
         padding-right: 10px;
+        
     }
 
     .hero {
@@ -275,232 +269,60 @@ section.content.books {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
-}
 
+    .hero p {
+        font-size: 1em;
+    }
 
+    section.content.author {
+        margin-top: 20px;
+        padding: 10px; 
+        max-height: 70vh;
+        
+    }
 
-/*
-
-header{
-	position: relative;
-    top: 0;
-	left: 0;
-	width: 100%;
-	padding: 3vw 50px;
-	background: rgba(202, 208, 212, 0.4);
-	backdrop-filter: blur(3px);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    z-index: 5;
-    align-self: center;
-}
-
-.head_links a{
-    font-size: clamp(0.7em, 1.5vw, 2.4em);
-    margin-left: clamp(0.8em, 1.7vw, 2.2em);
-    justify-content: space-between;
-    align-items: center;
-    color: #2e3636;
-    font-weight: 550;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.1em;
-
-}
-
-.head_links a.active {
-    color: #c44141; 
-    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
-}
-
-.head_links a:hover{
-    color: brown;
-    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
-}
-
-.logo{
-    font-size: 2.7vw;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 800; 
-    color: #2e4156;
-    text-shadow: 4px 4px 4px #aaa;
-}
-.logo:hover{
-    transform: scale(1.1);
-    color: #1a2d42;
-    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
-
-}
-
-.about-author{
-    width: 100vw;
-    height: 110vh;
-    background-color: #dbf2f8;
-    display: flex;
-    text-align: left;
-    position: relative;
+    .profile-image{
+        width: 50px;
+        height: auto;
+        align-items:first baseline;
     
-  }
+    }
+    .about-author {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap; /* Ensure the content does not wrap */
+        margin-bottom: 0; /* Add some space between sections */
+    }
+    .author-text h2 {
+        font-size: 17px;
+        text-align: center;
+ 
+         /* Adjust font size for smaller screens */
+    }
 
-  .profile-image{
-    width: 50%;
-  }
+    .author-text p {
+        font-size: 8px;
+        text-align: justify; 
+        margin-bottom: 0;
+    }
 
-  .profile-image img{
-    width: 33vw;
-    height: 66vh;
-    margin-top: 25vh;
-    border-radius: 50%;
-    transform: translateX(30%);
+    .image-gallery{
+        margin-top: 10px;
+    }
 
-  }
-
-  .author-text{
-    margin-top: 8vh;
-    width: 50%;
-    transform: translateX(-10%);
-  }
-
-  .about-author h2{
-    margin-top: 25vh;
-    font-size: 9vh;
-    text-shadow: 2px 2px 4px rgba(209, 213, 214, 0.7);
-    word-spacing: 0.2em;
-    animation: slideFromToph2 1s ease-in-out;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
-  }
-
-  .about-author p{
-    margin-top: 3vw;
-    font-size: 2vw;
-    margin-right: 10vw;
-    text-align: left;
-  }
-
-  .author-but {
-    text-decoration: none;
-    margin-top: 4vh;
-    background-color: brown; 
-    color: #eef6ff; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    display: inline-block; 
-    text-align: center;
-    font-size: 1vw;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.2em;
-    font-weight: 250; 
-}
-
-.author-but:hover {
-    background-color: #ff1100; 
-}
-
-  .hero {
-    background-image: url('bg-img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    text-align: center;
-    color: white;
-    min-width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    .image-gallery .image-item {
+        flex: 1 1 100%; /* Adjust the width of each image for very small screens */
+        margin: 5px 0;
+    }
 
     
-}
-
-.hero h1 {
-    font-size: 3.5vw;
-    font-weight: bold;
-    color: #2e4156;
-    text-shadow: 2px 2px 4px rgba(68, 70, 67, 0.7);
-    margin-bottom: 1vw;
-    transform: translateX(50%);
-    max-width: 50vw;
-    margin-right: 3vw;
     
-}
-
-.hero-text{
-    font-size: 1.7vw;
-    color: #08192e;
-    max-width: 50vw;
-    line-height: 1.4em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
-    transform: translateX(44.5%);
-    text-align: left;
-    margin-right: 2.5vw;
-    
-}
-
-.about-book{
-    width: 100%;
-    height: 100vh;
-    background-image: url('bg-aboutbook.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #acd0fa;
-    display: flex;
-    
-}
-
-.book-text{
-    text-align: center;
-    width: 100%;
-    font-size: 1.7em;
-    margin-top: 12vh;
-    padding: 15px;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 2px 2px 5px rgba(89, 23, 212, 0.2);
-    color: whitesmoke;
 
 }
 
-.book-text h2{
-    margin-top: 10vh;
-    font-size: 2.5em;
-    font-family: 'Playfair Display', serif;
-}
-
-.book-text p{
-    margin-top: 3.5vh;
-    font-size: 1em;
-    text-align: justify;
-    width: 40vw;
-    margin-left: 12%;
-}
-
-
-
-.book-mockup{
-    margin-top: 12vh;
-    width: 100%;
-}
-
-.book-mockup img{
-    margin-top: 5vh;
-    margin-left: 3vw;
-    width: 77%;
-    height: auto;
-    box-shadow: 5px 40px 80px rgba(29, 28, 28, 0.1);
-}
-
-
-
-*/
 
 footer {
     width: 100%;
