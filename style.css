@@ -158,6 +158,10 @@ section.content.books {
     background-repeat: no-repeat;
 }
 
+section.content.books h1{
+    display: none;
+}
+
 .about-book {
     display: flex;
     flex-wrap: wrap;
