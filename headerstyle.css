@@ -370,15 +370,22 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .profile-image{
+        display: none;
+    }
+
+    .prof-image{
+        display: block;
         min-width: 30vw;
         margin-left: 20px;
         margin-top: 1.2vh;
+        
     
     }
 
-    .profile-image img{
+    .prof-image img{
         width: 98%;
         height: auto;
+        border-radius: 5px;
         
     }
     .about-author {
@@ -388,10 +395,12 @@ nav ul li a:hover, nav ul li a.active {
         margin-bottom: 0; /* Add some space between sections */
     }
 
-    
+    .author-text{
+        max-width: 50vw;
+    }
     
     .author-text h2 {
-        max-width: 50vw;
+        
         font-size: 20px;
         text-align: center;
         margin-top: 10px;
@@ -403,7 +412,7 @@ nav ul li a:hover, nav ul li a.active {
 
 
     .author-text p {
-        min-width: 40vw;
+        min-width: 45vw;
         font-size: 10px;
         letter-spacing: 0;
         text-align: justify; 
@@ -454,7 +463,7 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .book-text {
-        max-width: 40vw; 
+        max-width: 50vw; 
     }
 
     .book-text h2 {
