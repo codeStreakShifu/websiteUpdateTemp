@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -23,59 +23,58 @@ header {
     z-index: 1000; /* Ensure the header is above other content */
 }
 
-nav{
+nav {
     background: rgba(202, 208, 212, 0.4);
-	backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
-label.logo{
+label.logo {
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 2.9vw;
     color: #2e3636;
-    line-height: 100px;
-    padding: 0 100px;
     font-weight: bolder;
     text-transform: uppercase;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
 label.logo:hover {
     color: #000000;
     text-shadow: 2px 2px 4px rgba(231, 133, 133, 0.5);
-    transform: scale(1.2); /* Scale to 1.2 on hover */
+    transform: scale(1.1); /* Scale to 1.2 on hover */
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
-nav ul{
-    float: right;
-    margin-right: 50px;
+
+nav ul {
+    display: flex;
 }
 
-nav ul li{
-    display: inline-block;
-    line-height: 100px;
+nav ul li {
     margin: 0 15px;
-    font-size: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #2e3636;
     font-size: 20px;
     text-transform: uppercase;
-    
+    transition: color 0.3s ease;
 }
-a.active,a:hover{
+
+nav ul li a:hover, nav ul li a.active {
     color: #c44141;
-    padding: 9px;
-    border-radius: 4px;
-    transition: 0.5s ease;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
-    color: white;
+    color: white; /* Set the color to white */
     float: right;
     line-height: 100px;
     margin-right: 40px;
@@ -83,6 +82,72 @@ a.active,a:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1200px){
+    label.logo {
+        font-size: 3vw;
+    }
+
+    nav ul li a {
+        
+        font-size: 1.79vw;
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+        font-size: 5.8vw;
+    }
+
+    label.logo {
+        font-size: 5.5vw;
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: rgba(202, 208, 212, 0.9);
+        backdrop-filter: blur(3px);
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    .checkbtn {
+        margin-left: 20px;
+    }
 }
