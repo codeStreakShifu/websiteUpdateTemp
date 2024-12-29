@@ -74,6 +74,7 @@ section.content.author {
 
 .image-gallery {
     display: flex;
+    overflow-x: visible;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
