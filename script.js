@@ -14,11 +14,17 @@ links.forEach(link => {
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 600,   // Keep animations smooth
-        offset: 120,     // Avoid animations triggering too early
+        offset: 10,      // Avoid animations triggering too early
         debounceDelay: 50, // Optimize resize handling
-        throttleDelay: 50, // Optimize scroll handling
+        throttleDelay: 0,  // Optimize scroll handling
         mirror: true, 
+        once: false,     // Allow animations to trigger multiple times
     });
-  });
+
+    // Ensure AOS refreshes after all images are loaded
+    window.addEventListener('load', () => {
+        AOS.refresh();
+    });
+});
 
   
