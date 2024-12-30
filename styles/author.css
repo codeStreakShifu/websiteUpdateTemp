@@ -32,7 +32,6 @@ section.content.author {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
     
 }
 
@@ -106,11 +105,19 @@ section.content.author h1{
 section.content.gallery {
     padding: 30px 0;
     text-align: center;
-    max-height: 100vh;
+    max-height: 670px;
     max-width: 100vw;
     overflow-y: auto;
     position: relative;
+    background-color: rgb(250, 250, 219);
+    
 }
+
+section.content.gallery.video{
+    background-color: aliceblue;
+}
+
+
 
 h1 {
     text-align: center;
@@ -126,7 +133,18 @@ h1 {
 
 }
 
+.content-title h1{
+    margin: 0 3vw;
+    padding: 20px;
+}
+
+.content-title p{
+    margin: 0;
+    font-size: 42px;
+}
+
 .gallery-container {
+    
     margin-top: 0;
     padding: 0 50px;
     display: flex;
@@ -161,6 +179,7 @@ h1 {
 }
 
 .gallery-container-video{
+    max-height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -169,13 +188,13 @@ h1 {
 .gallery-item1{ 
     flex: 0 0 100vw; /* One video per scroll */
     max-width: 100vw;
-    max-height: 90vh;
+    max-height: 450px;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -186,6 +205,39 @@ h1 {
 .gallery-item1 p{
     display: none;
 }
+
+.content.gallery.interview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.container-interview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.interview {
+    width: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.interview iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 
 
 /* Responsive styles */
@@ -233,26 +285,44 @@ h1 {
     }
 
     section {
-        padding: 50px 20px;
+        padding: 50px;
     }
 
 
     section.content.author {
         max-height: 450px;
         min-width: 100vw;
+        
     }
 
     section.content.author h1{
         display: block;
         font-size: 4vw;
-        
-        
     }  
 
     h1{
         font-size: 40px;
-        padding: 25px 0 40px 0;
+        margin: 20px 0;
+        padding: 25px 0;
     } 
+    .content-title{
+        text-align: center;
+        max-width: 100vw;
+        margin: 30px 3vw;
+    }
+
+    .content-title p{
+        font-size: 3vw;
+    }
+    .content-title h1{
+        padding: 0;
+        text-align: center;
+        font-size: 8vw;
+    }
+   .content-title.interview h1{
+        margin: 0;
+        font-size: 6vw;
+    }
 
     .profile-image{
         display: none;
@@ -317,10 +387,33 @@ h1 {
         margin-bottom: 0;
     }
 
+    section.content.gallery{
+        max-height: 70vh;
+        padding: 0 3vw;
+  
+    }
+    section.content.gallery.interview{
+        max-width: 100vw;
+    }
+    .gallery-container {
+        margin-top: -10px;
+        padding: 0px 10px;
+        gap: 10px 10px;
+        max-height: fit-content;
+    }
+
     .gallery-item {
         flex: 0 0 calc(50% - 20px); /* 2 columns */
         height: auto;
     }
+
+   
+
+    .interview iframe {
+        height: 300px;
+    }
+
+    
 }
 
 @media (max-width: 480px) {
@@ -406,14 +499,7 @@ h1 {
         text-justify: newspaper;
         font-weight: normal;
     }
-
-
-    .gallery-container {
-        margin: 0;
-        padding: 0px 10px;
-        gap: 10px 10px;
-        max-height: fit-content;
-    }
+    
     .gallery-item { 
         flex: 5 0 calc(45.9% - 20px);
         max-height: calc(100vh - 10px);
