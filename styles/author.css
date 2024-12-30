@@ -160,6 +160,16 @@ h1 {
     transform: scale(1.05);
 }
 
+.gallery-item1{ 
+    margin: 0 30px;
+    flex: 5 0 100%;
+    max-width: 100vw;
+}
+
+.gallery-item1 video{ 
+    width: 100%;
+    height: auto;
+}
 
 
 /* Responsive styles */
@@ -391,6 +401,20 @@ h1 {
     .gallery-item { 
         flex: 5 0 calc(45.9% - 20px);
         max-height: calc(100vh - 10px);
+    }
+
+    
+
+   
+    .gallery-item1{ 
+        margin: 0 30px;
+        flex: 5 0 100%;
+        max-width: 100vw;
+    }
+
+    .gallery-item1 video{ 
+        width: 100%;
+        height: auto;
     }
 }
 
