@@ -32,6 +32,7 @@ section.content.author {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
     
 }
 
@@ -47,7 +48,7 @@ section.content.author h1{
     align-items: center;
     max-width: 100vw;
     padding: 20px;
-    border-radius: 10px;
+
 }
 
 
@@ -65,7 +66,7 @@ section.content.author h1{
     font-size: 20px;
     padding: 10px;
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.2em;
     background-color: rgb(211, 211, 216);
     border-radius: 10px;
@@ -90,7 +91,7 @@ section.content.author h1{
 .author-text h2 {
     display: block;
     font-size: 60px; /* Increase font size */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
     
 }
@@ -100,7 +101,6 @@ section.content.author h1{
     line-height: 1.8;
     text-align: justify;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
-    margin-bottom: 50px;
 }
 
 section.content.gallery {
@@ -114,18 +114,20 @@ section.content.gallery {
 
 h1 {
     text-align: center;
-    font-size: 56px;
-    margin-bottom: 20px;
+    font-size: 60px;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     position: relative;
     top: 0;
     z-index: 10;
-    padding: 50px 0 0px 0;
+    padding: 50px;
+    border-radius: 10px;
+
 }
 
 .gallery-container {
+    margin-top: 0;
     padding: 0 50px;
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +141,6 @@ h1 {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    margin: 30px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -211,9 +212,8 @@ h1 {
 
 
     section.content.author {
-        min-height: 750px;
+        max-height: 450px;
         min-width: 100vw;
-        padding: 30px;
     }
 
     section.content.author h1{
@@ -221,7 +221,12 @@ h1 {
         font-size: 4vw;
         
         
-    }   
+    }  
+
+    h1{
+        font-size: 40px;
+        padding: 25px 0 40px 0;
+    } 
 
     .profile-image{
         display: none;
@@ -304,9 +309,9 @@ h1 {
     }
 
     section.content.author {
-        min-height: 520px;
+        max-height: 520px;
         min-width: 100vw;
-        padding: 30px;
+        padding: 120px 30px 30px 30px;
         
     }
 
@@ -315,7 +320,7 @@ h1 {
         font-size: 6.5vw;
         padding: 0;
         margin-top: 2vh;
-        
+        text-shadow: 2px 2px 4px rgba(119, 36, 36, 0.2);
         
     }
 
@@ -339,8 +344,9 @@ h1 {
 
     .prof-image p{
         width: 100%;
-        font-size: 2vw;
-        margin-top: 5px;
+        font-size: 1.5vw;
+        padding: 5px 10px;
+        font-weight: normal;
         letter-spacing: 0.1em;
     }
     .about-author {
@@ -370,19 +376,29 @@ h1 {
         width: 100%;
         font-size: 2.5vw;
         letter-spacing: 0;
-        text-align: center; 
-        font-weight: bold;
+        text-align: justify; 
+        text-justify: newspaper;
+        font-weight: normal;
     }
 
 
     .gallery-container {
         margin: 0;
         padding: 0px 10px;
-        gap: 0 10px;
+        gap: 10px 10px;
         max-height: fit-content;
     }
     .gallery-item { 
         flex: 5 0 calc(45.9% - 20px);
         max-height: calc(100vh - 10px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
