@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Kithcart</title>
+    <title>Events - Jonathan Kithcart</title>
     <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="./styles/events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -12,17 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('./styles/images/author-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -39,41 +29,39 @@
             </ul>
         </nav>
     </header>
-    <div class="contain">
-    <div class="contact-info">
-        <p>If you have any questions or inquiries, feel free to reach out!</p>
-        <p>Email: <a href="mailto:jonathankithcart@icloud.com">jonathankithcart@icloud.com</a></p>
-        <!--p>Phone: <a href="tel:+17183092059">718-309-2059</a></p-->
-    </div> 
-    <section class="content contact">
-        <div class="contact-container">
-            
-            <h1>Contact Us</h1>
-            <form action="mailto:jonathankithcart@icloud.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+
+    <section class="events-section">
+        <div class="events-container">
+            <h2 data-aos="fade-right" data-aos-duration="1500">Manila International Book Fair</h2>
+            <div class="event-images">
+                <div class="event-item" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="https://www.manilabookfair.com/aboutmibf" target="_blank">
+                        <img src="./styles/images/event1.jpg" alt="Event 1" class="event-image">
+                    </a>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="event-item" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="https://www.manilabookfair.com/aboutmibf" target="_blank">
+                        <img src="./styles/images/event2.jpg" alt="Event 2" class="event-image">
+                    </a>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            </div>
+            <h3 data-aos="fade-up" data-aos-duration="2500">Prime Spot Display at the Biggest Book Fair in Asia</h3>
         </div>
     </section>
-</div>
+    
+    <section class="press-release">
+        <div class="press-container">
+            <h2 data-aos="fade-left" data-aos-duration="1500">Latest News & Announcements</h2>
+            <p data-aos="fade-up" data-aos-duration="1500">Jonathan Kithcart is thrilled to announce the release of his latest book, "Paul: A Wise Master Builder Without the Tithe." This book delves into the teachings of Paul and explores the concept of grace giving as outlined in the Holy Scriptures. Jonathan provides a comprehensive analysis of Paul's epistles to the Gentiles, offering readers a deeper understanding of the biblical principles of giving.</p>
+            <p data-aos="fade-up" data-aos-duration="1500">For more details, read the full press release <a href="https://www.kark.com/business/press-releases/ein-presswire/680398774/jonathan-kithcarts-paul-a-wise-master-builder-without-the-tithe-grace-giving-holy-scriptures-by-paul-to-the-gentiles/" target="_blank">here</a>.</p>
+        </div>
+    </section>
+    
 
     <footer>
         <p>&copy; 2024 Jonathan Kithcart. All rights reserved.</p>
         <p>Contact us at: <a href="mailto:jonathankithcart@icloud.com">jonathankithcart@icloud.com</a></p>
-        
-        <!-- Social Media Icons -->
-         <div class="social-icons">
+        <div class="social-icons">
             <p>Follow us on:
                 <a href="https://www.facebook.com" target="_blank" title="Facebook">
                     <i class="fab fa-facebook"></i>
@@ -86,10 +74,9 @@
                 </a>
             </p>
         </div>
-
-        <div class="seaamos">
-            <h4>Created by Sea Amos - Designer Joseph</h4>
-        </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
