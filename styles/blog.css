@@ -1,0 +1,125 @@
+
+
+/* Blog section styles */
+.blog-section  {
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blog-section h1 {
+    font-family: 'Georgia', sans-serif;
+    color: rgb(77, 77, 77);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    font-size: 76px;
+    padding: 20px;
+}
+
+
+.blog-container {
+    border-radius: 10px;
+    min-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-items {
+    max-width: 60vw;
+    flex: 1 1 calc(50.333% - 60px); /* 3 columns with gap */
+    box-sizing: border-box;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.blog-container h2{
+    text-align: center;
+}
+
+.blog-items img{
+    min-width: 100%;
+    border-radius: 5px;
+    max-height: 400px;
+}
+
+.blog-items h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #333;
+}
+
+.blog-items p{
+
+    font-size: 17px;
+    margin: 20px 15px 9px 15px;
+    text-align: justify;
+
+}
+
+.blog-items a{
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(145, 61, 148);
+    letter-spacing: 0.2em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .blog-items {
+        flex: 1 1 calc(50% - 40px); /* 2 columns on smaller screens */
+    }
+
+    .blog-items img{
+        min-width: 100%;
+        border-radius: 5px;
+        max-height: 300px;
+    }
+
+    .blog-section h1{
+        font-size: 48px;
+    }
+
+    .blog-items p{
+        font-size: 14px;
+    }
+    .blog-items h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .blog-items img{
+        min-width: 100%;
+        border-radius: 5px;
+        max-height: 300px;
+    }
+
+    .blog-items {
+        max-width: 100%;
+        flex: 1 1 100%; /* 1 column on very small screens */
+        padding: 10px;
+        
+    }
+
+    
+
+   
+}
