@@ -39,4 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const fullText = this.previousElementSibling.querySelector('.full-text');
+            const shortText = this.previousElementSibling.querySelector('.short-text');
+
+            if (fullText.style.display === 'none') {
+                fullText.style.display = 'inline';
+                shortText.style.display = 'none';
+                this.textContent = 'READ LESS';
+            } else {
+                fullText.style.display = 'none';
+                shortText.style.display = 'inline';
+                this.textContent = 'READ MORE';
+            }
+        });
+    });
+});
   

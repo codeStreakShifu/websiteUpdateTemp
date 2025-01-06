@@ -2,7 +2,7 @@
 
 /* Blog section styles */
 .blog-section  {
-    min-height: 100vh;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,6 @@
 .blog-items {
     max-width: 60vw;
     flex: 1 1 calc(50.333% - 60px); /* 3 columns with gap */
-    box-sizing: border-box;
     background: #fff;
     padding: 25px;
     border-radius: 10px;
@@ -72,7 +71,12 @@
 
 }
 
-.blog-items a{
+
+
+
+.blog-items button{
+    border: none;
+    background-color: none;
     padding: 15px;
     font-weight: bolder;
     font-size: 16px;
@@ -82,14 +86,8 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .blog-items {
-        flex: 1 1 calc(50% - 40px); /* 2 columns on smaller screens */
-    }
-
-    .blog-items img{
-        min-width: 100%;
-        border-radius: 5px;
-        max-height: 300px;
+    section{
+        min-height: 100vh;
     }
 
     .blog-section h1{
