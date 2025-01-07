@@ -95,6 +95,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+
 }
 
 footer p {
@@ -133,7 +134,7 @@ footer .social-icons .fa-youtube:hover {
 
 .contain{
     margin-top: 150px;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .content.contact {

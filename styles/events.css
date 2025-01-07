@@ -15,22 +15,20 @@ section {
 .events-section {
     padding: 150px 20px;
     background: #eeebeb;
-
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
 }
 
 .events-container {
+    padding-bottom: 50px;
     max-width: 1400px;
-    
     margin: 0 auto;
     letter-spacing: 0.2em;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 h3{
-    margin-top: 30px;
-    padding-bottom: 100px;
+    margin: 20px 0 150px 0;
 }
 
 .events-container h2 {

@@ -27,6 +27,7 @@ section{
 }
 
 section.content.homepage {
+    padding: 150px 0;
     background-image: url('./images/bg-img.jpg');
     position: relative;
     background-size: cover;
@@ -128,7 +129,7 @@ section.content.author h1{
 
 .author-text h2 {
     display: block;
-    font-size: 60px; /* Increase font size */
+    font-size: 50px; /* Increase font size */
     margin-bottom: 30px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
     
