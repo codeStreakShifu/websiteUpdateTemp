@@ -42,21 +42,22 @@ section.content.homepage {
 .hero {
     display: inline-block; /* Ensure the hero section does not take full width */
     text-align: center; /* Center text inside hero */
-    width: 50%; /* Take up half of the section */
+    width: 40vw; /* Take up half of the section */
     margin-right: 0; /* Remove any right margin */
     
 }
 
 .hero h1 {
+    margin-top: 50px;
     margin-bottom: 40px;
     text-align: center; /* Center the h1 element */
-    font-size: 50px;
+    font-size: 3.9vw;
     font-weight: bolder;
     
 }
 
 .hero p{
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 2em;
     font-style: italic;
     margin-bottom: 30px;
@@ -67,7 +68,7 @@ section.content.author {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 100px;
+    padding: 75px 75px;
     background-image: url('./images/author-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -102,7 +103,7 @@ section.content.author h1{
 }
 
 .profile-image p{
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     margin-top: 10px;
     font-weight: normal;
@@ -123,20 +124,23 @@ section.content.author h1{
     display: none;
 }
 .author-text {
+    max-width: 100vw;
     flex: 2;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
 }
 
 .author-text h2 {
+    width: 110%;
     display: block;
-    font-size: 50px; /* Increase font size */
+    font-size: 3.5vw; /* Increase font size */
     margin-bottom: 30px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
     
 }
 
 .author-text p {
-    font-size: 24px; /* Increase font size */
+    width: 100%;
+    font-size: 18px; /* Increase font size */
     line-height: 1.8;
     text-align: justify;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
@@ -225,13 +229,13 @@ section.content.books h1{
 
 .book-text h2 {
     margin-top: -10%;
-    font-size: 60px; /* Increase font size */
+    font-size: 3.5vw; /* Increase font size */
     margin-bottom: 30px;
     color: whitesmoke; /* Change text color to white smoke */
 }
 
 .book-text p {
-    font-size: 20px; /* Increase font size */
+    font-size: 18px; /* Increase font size */
     line-height: 1.8;
     text-align: justify;
     margin-bottom: 10px;

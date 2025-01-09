@@ -83,20 +83,22 @@ section.content.author h1{
     display: none;
 }
 .author-text {
+    min-width: 50%;
     flex: 2;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
 }
 
-.author-text h2 {
+.author-text h3 {
     display: block;
-    font-size: 60px; /* Increase font size */
-    margin-bottom: 50px;
+    width: 100%;
+    font-size: 4.5vw; /* Increase font size */
+    margin-bottom: 30px;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
     
 }
 
 .author-text p {
-    font-size: 24px; /* Increase font size */
+    font-size: 1.5vw; /* Increase font size */
     line-height: 1.8;
     text-align: justify;
     color: rgb(0, 0, 0); /* Change text color to white smoke */
@@ -121,7 +123,7 @@ section.content.gallery.video{
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 4.5vw;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -372,9 +374,8 @@ h1 {
         padding: 20px;
     }
     
-    .author-text h2 {
-        
-        font-size: 20px;
+    .author-text h3 {
+        font-size: 3.5vw;
         text-align: center;
         display: none;
  
