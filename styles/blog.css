@@ -90,6 +90,16 @@ body{
     letter-spacing: 0.2em;
 }
 
+.grateful-list li:before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0078D7;
+    font-weight: bold;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     section{
