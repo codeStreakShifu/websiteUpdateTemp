@@ -91,6 +91,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 footer {
+    top: 0;
     width: 100%;
     background-color: #c43e35;
     color: white;

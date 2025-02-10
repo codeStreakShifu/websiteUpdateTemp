@@ -100,6 +100,8 @@ body{
     font-weight: bold;
 }
 
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     section{
@@ -116,6 +118,8 @@ body{
     .blog-items h2{
         font-size: 22px;
     }
+
+
 }
 
 @media (max-width: 480px) {
