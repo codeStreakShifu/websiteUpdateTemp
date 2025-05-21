@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .event-details {
+            background: #f9f9f9;
+            padding-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-details h3 {
+            font-size: 30px;
+            color: #333;
+        }
+
+        .event-details p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .event-details strong {
+            color: #333;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.02);
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -21,7 +64,7 @@
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
             <ul>
-                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="author.html">Author</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -33,6 +76,58 @@
 
     <section class="events-section">
         <div class="events-container">
+            <!-- Add NYLA Conference Section -->
+            <div class="event-details" data-aos="fade-up" data-aos-duration="1500">
+                <h3>📸 Full Visual Gallery: NYLA 2024 Report</h3>
+                <p>Browse through the full set of NYLA 2024 Fulfillment Report pages featuring Jonathan Kithcart’s
+                    participation. These pages capture highlights, library endorsements, professional engagement, and
+                    event statistics.</p>
+
+                <div class="gallery-grid">
+                    <img src="./styles/images/nyla_page_1.png" alt="NYLA Page 1">
+                    <img src="./styles/images/nyla_page_2.png" alt="NYLA Page 2">
+                    <img src="./styles/images/nyla_page_3.png" alt="NYLA Page 3">
+                    <img src="./styles/images/nyla_page_4.png" alt="NYLA Page 4">
+                    <img src="./styles/images/nyla_page_5.png" alt="NYLA Page 5">
+                    <img src="./styles/images/nyla_page_6.png" alt="NYLA Page 6">
+                    <img src="./styles/images/nyla_page_7.png" alt="NYLA Page 7">
+                    <img src="./styles/images/nyla_page_8.png" alt="NYLA Page 8">
+                    <img src="./styles/images/nyla_page_9.png" alt="NYLA Page 9">
+                    <img src="./styles/images/nyla_page_10.png" alt="NYLA Page 10">
+                    <img src="./styles/images/nyla_page_11.png" alt="NYLA Page 11">
+                    <img src="./styles/images/nyla_page_12.png" alt="NYLA Page 12">
+                    <img src="./styles/images/nyla_page_13.png" alt="NYLA Page 13">
+                </div>
+
+
+                <h3>🇨🇦 Toronto Book Endorsement Campaign 2024</h3>
+                
+                <h4>📸 Full Report Visual Gallery</h4>
+                <div class="gallery-grid">
+                    <img src="./styles/images/toronto_page_1.png" alt="Toronto Page 1">
+                    <img src="./styles/images/toronto_page_2.png" alt="Toronto Page 2">
+                    <img src="./styles/images/toronto_page_3.png" alt="Toronto Page 3">
+                    <img src="./styles/images/toronto_page_4.png" alt="Toronto Page 4">
+                    <img src="./styles/images/toronto_page_5.png" alt="Toronto Page 5">
+                    <img src="./styles/images/toronto_page_6.png" alt="Toronto Page 6">
+                    <img src="./styles/images/toronto_page_7.png" alt="Toronto Page 7">
+                    <img src="./styles/images/toronto_page_8.png" alt="Toronto Page 8">
+                    <img src="./styles/images/toronto_page_9.png" alt="Toronto Page 9">
+                    <img src="./styles/images/toronto_page_10.png" alt="Toronto Page 10">
+                    <img src="./styles/images/toronto_page_11.png" alt="Toronto Page 11">
+                    <img src="./styles/images/toronto_page_12.png" alt="Toronto Page 12">
+                    <img src="./styles/images/toronto_page_13.png" alt="Toronto Page 13">
+                    <img src="./styles/images/toronto_page_14.png" alt="Toronto Page 14">
+                </div>
+
+                <p><a href="https://heyzine.com/flip-book/dfa9b0dc8c.html" target="_blank">📖 View the Toronto 2024
+                        Flipbook Catalog</a></p>
+            </div>
+
+
+
+
+
             <h2 data-aos="fade-right" data-aos-duration="1500">Manila International Book Fair</h2>
             <div class="event-images top">
                 <div class="event-item" data-aos="fade-up" data-aos-duration="1500">
@@ -46,7 +141,7 @@
                     </a>
                 </div>
 
-                
+
             </div>
 
             <div class="event-images">
@@ -61,20 +156,26 @@
                     </a>
                 </div>
 
-                
+
             </div>
             <h3 data-aos="fade-up" data-aos-duration="2500">Prime Spot Display at the Largest Book Fair in Asia</h3>
         </div>
     </section>
-    
+
     <section class="press-release">
         <div class="press-container">
             <h2 data-aos="fade-left" data-aos-duration="1500">Latest News & Announcements</h2>
-            <p data-aos="fade-up" data-aos-duration="1500">Jonathan Kithcart is thrilled to announce the release of his latest book, "Paul: A Wise Master Builder Without the Tithe." This book delves into the teachings of Paul and explores the concept of grace giving as outlined in the Holy Scriptures. Jonathan provides a comprehensive analysis of Paul's epistles to the Gentiles, offering readers a deeper understanding of the biblical principles of giving.</p>
-            <p data-aos="fade-up" data-aos-duration="1500">For more details, read the full press release <a href="https://www.kark.com/business/press-releases/ein-presswire/680398774/jonathan-kithcarts-paul-a-wise-master-builder-without-the-tithe-grace-giving-holy-scriptures-by-paul-to-the-gentiles/" target="_blank">here</a>.</p>
+            <p data-aos="fade-up" data-aos-duration="1500">Jonathan Kithcart is thrilled to announce the release of his
+                latest book, "Paul: A Wise Master Builder Without the Tithe." This book delves into the teachings of
+                Paul and explores the concept of grace giving as outlined in the Holy Scriptures. Jonathan provides a
+                comprehensive analysis of Paul's epistles to the Gentiles, offering readers a deeper understanding of
+                the biblical principles of giving.</p>
+            <p data-aos="fade-up" data-aos-duration="1500">For more details, read the full press release <a
+                    href="https://www.kark.com/business/press-releases/ein-presswire/680398774/jonathan-kithcarts-paul-a-wise-master-builder-without-the-tithe-grace-giving-holy-scriptures-by-paul-to-the-gentiles/"
+                    target="_blank">here</a>.</p>
         </div>
     </section>
-    
+
 
     <footer>
         <p>&copy; 2024 Jonathan Kithcart. All rights reserved.</p>
@@ -95,15 +196,16 @@
 
         <div class="seaamos">
             <h4>
-             Created by Sea Amos - 
-     
-             <a href="https://codestreakshifu.github.io/who-am-I/"> Designer Joseph</a>
-     </h4>
-         </div>
-         
+                Created by Sea Amos -
+
+                <a href="https://codestreakshifu.github.io/who-am-I/"> Designer Joseph</a>
+            </h4>
+        </div>
+
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

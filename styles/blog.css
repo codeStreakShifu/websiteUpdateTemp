@@ -41,7 +41,7 @@ body{
 }
 
 .blog-items {
-    max-width: 60vw;
+    max-width: 45vw;
     flex: 1 1 calc(50.333% - 60px); /* 3 columns with gap */
     background: #fff;
     padding: 25px;
